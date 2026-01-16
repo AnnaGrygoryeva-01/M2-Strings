@@ -41,6 +41,12 @@ const fileNames = [
 
 // 4) Створіть функцію, яка приймає рядок і повертає кількість голосних літер у ньому.
 // 5) Створіть функцію, яка перевіряє, чи є рядок паліндромом.
+function palindrome(string) {
+  const normalString = string.toLowerCase();
+  const reversedString = normalString.split("").reverse().join("");
+  return normalString === reversedString;
+}
+console.log(palindrome("Anna"));
 
 // *
 // 6) Створіть функцію, яка знаходить найдовше слово у рядку і повертає його.
