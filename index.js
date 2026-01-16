@@ -40,6 +40,16 @@ const fileNames = [
 // 3) Дан рядок: 'abcde abcde abcde abcde'. Замініть у ній перший символ кожного слова на '!'
 
 // 4) Створіть функцію, яка приймає рядок і повертає кількість голосних літер у ньому.
+function countVowels(text) {
+  const vowels = ["a", "e", "i", "o", "u", "y"];
+  const foundVowels = text
+    .toLowerCase()
+    .split("")
+    .filter((character) => vowels.includes(character));
+  return foundVowels.length;
+}
+console.log(countVowels("Anna"));
+
 // 5) Створіть функцію, яка перевіряє, чи є рядок паліндромом.
 
 // *
