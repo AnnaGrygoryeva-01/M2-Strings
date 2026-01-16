@@ -18,6 +18,9 @@ const stringsHref = [
   "https://medium.com&quot",
 ];
 
+const newString = stringsHref.filter((str) => str.startsWith("http://"));
+console.log(newString);
+
 // 2) Є масив з рядками. Залиште в цьому масиві тільки ті рядки, які закінчуються на .html
 const fileNames = [
   "index.html",
