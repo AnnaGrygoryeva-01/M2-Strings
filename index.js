@@ -38,6 +38,12 @@ const fileNames = [
 ];
 
 // 3) Дан рядок: 'abcde abcde abcde abcde'. Замініть у ній перший символ кожного слова на '!'
+const string = "abcde abcde abcde abcde";
+const result = string
+  .split(" ")
+  .map((word) => "!" + word.slice(1))
+  .join(" ");
+console.log(result);
 
 // 4) Створіть функцію, яка приймає рядок і повертає кількість голосних літер у ньому.
 // 5) Створіть функцію, яка перевіряє, чи є рядок паліндромом.
