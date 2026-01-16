@@ -72,3 +72,9 @@ console.log(palindrome("Anna"));
 
 // *
 // 6) Створіть функцію, яка знаходить найдовше слово у рядку і повертає його.
+function longestWord(string) {
+  const newString = string.split(" ");
+  newString.sort((a, b) => b.length - a.length);
+  return newString[0];
+}
+console.log(longestWord("Hello, my name is Christopher"));
