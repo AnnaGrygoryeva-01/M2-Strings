@@ -63,6 +63,12 @@ function countVowels(text) {
 console.log(countVowels("Anna"));
 
 // 5) Створіть функцію, яка перевіряє, чи є рядок паліндромом.
+function palindrome(string) {
+  const normalString = string.toLowerCase();
+  const reversedString = normalString.split("").reverse().join("");
+  return normalString === reversedString;
+}
+console.log(palindrome("Anna"));
 
 // *
 // 6) Створіть функцію, яка знаходить найдовше слово у рядку і повертає його.
