@@ -37,6 +37,9 @@ const fileNames = [
   "privacy-policy.html",
 ];
 
+const anotherString = fileNames.filter((str) => str.endsWith(".html"));
+console.log(anotherString);
+
 // 3) Дан рядок: 'abcde abcde abcde abcde'. Замініть у ній перший символ кожного слова на '!'
 
 // 4) Створіть функцію, яка приймає рядок і повертає кількість голосних літер у ньому.
