@@ -76,15 +76,17 @@ console.log(countCharacters("Anna"));
 console.log(countCharacters("Hello World", ["l", "r", "m", "n", "p", "s"]));
 
 // 5) Створіть функцію, яка перевіряє, чи є рядок паліндромом.
+
 function palindrome(string) {
-  const cleanString = string.toLowerCase().replace(/[^a-zа-я0-9]/gi, "");
+  const lowerString = string.toLowerCase();
+  const cleanString = lowerString.split(" ").join("");
   const reversedString = cleanString.split("").reverse().join("");
   return cleanString === reversedString;
 }
+
 console.log(palindrome("Anna"));
 console.log(palindrome("Never odd or even"));
 
-// *
 // 6) Створіть функцію, яка знаходить найдовше слово у рядку і повертає його.
 function longestWord(string) {
   return string.split(" ").toSorted((a, b) => b.length - a.length)[0];
