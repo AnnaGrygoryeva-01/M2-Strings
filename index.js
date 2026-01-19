@@ -49,6 +49,19 @@ function countVowels(text) {
   return foundVowels.length;
 }
 console.log(countVowels("Anna"));
+// or
+function countCharacters(text, charList = ["a", "e", "i", "o", "u", "y"]) {
+  const lowerCharList = charList.map((char) => char.toLowerCase());
+  const foundChars = text
+    .toLowerCase()
+    .split("")
+    .filter((character) => lowerCharList.includes(character));
+
+  return foundChars.length;
+}
+
+console.log(countCharacters("Anna"));
+console.log(countCharacters("Hello World", ["l", "r", "m", "n", "p", "s"]));
 
 // 5) Створіть функцію, яка перевіряє, чи є рядок паліндромом.
 
