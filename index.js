@@ -45,8 +45,6 @@ const fileNames = [
 // *
 // 6) Створіть функцію, яка знаходить найдовше слово у рядку і повертає його.
 function longestWord(string) {
-  const newString = string.split(" ");
-  newString.sort((a, b) => b.length - a.length);
-  return newString[0];
+  return string.split(" ").toSorted((a, b) => b.length - a.length)[0];
 }
-console.log(longestWord("Hello, my name is Christopher"));
+console.log(longestWord("My name is Christopher"));
